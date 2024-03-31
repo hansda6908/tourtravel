@@ -1,0 +1,322 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.navbar {
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: navy;
+}
+
+
+#logoimage {
+    width: 100px;
+    height: 50px;
+    margin: 0;
+    padding: 0px;
+
+}
+
+.nav-link {
+    color: navy;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand:hover {
+    color: #18DBDB;
+}
+
+.nav-link:hover {
+    color: #18DBDB;
+}
+
+.dropdown-item:hover {
+    color: #18DBDB;
+}
+
+.dropdown-menu a {
+    color: navy;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.jumbotron {
+    background-image: url('../public/images/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 38% 100%, 0 91%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-bg {
+    margin: auto;
+}
+
+.main-bg h1,
+h3 {
+    text-align: center;
+    color: navy;
+}
+
+.main-bg h1 {
+    font-weight: bold;
+}
+
+.main-bg button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-brandname {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#changeText {
+    color: #18DBDB;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    background-color: #13F2E8;
+    color: navy;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #18DBDB;
+}
+
+#main-btn {
+    margin: auto;
+    padding: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#changeText:after {
+    content: " ";
+    animation-name: changeTextAnime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeTextAnime {
+    0% {
+        content: "United State";
+    }
+
+    20% {
+        content: "India";
+    }
+
+    40% {
+        content: "France";
+    }
+
+    60% {
+        content: "Germany";
+    }
+
+    80% {
+        content: "Dubai";
+    }
+
+    100% {
+        content: "Turkey";
+    }
+}
+
+#section1,
+#section2 {
+    margin: top 20px;
+    margin-bottom: 20px;
+}
+
+#form-btn {
+    padding: 15px;
+    width: 150px;
+    font-weight: bold;
+}
+
+.form-btn1 {
+    justify-content: center;
+    align-items: center;
+}
+
+.book-img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+/* section */
+.section-book,
+.section-pack,
+.services {
+    text-align: center;
+    color: navy;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+.card-body img {
+    height: 200px;
+    width: 100%;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+/* package price */
+.pac-price {
+    font-weight: bold;
+}
+
+/* services */
+.d-block {
+    width: 200px;
+    height: 500px;
+}
+
+.slide-h2 {
+    text-align: center;
+    margin: auto;
+}
+
+.slider1 {
+    /* background-color: rgb(218, 203, 203); */
+    background-color: #18DBDB;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+/* modal */
+.modal p {
+    color: black;
+}
+
+/* About us section */
+.about-img {
+    border-radius: 20px;
+}
+
+.com-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+
+.com-info li {
+
+    font-weight: bold;
+    line-height: 35px;
+    font-size: 24px;
+    list-style-type: square;
+}
+
+.heading-title {
+    color: navy;
+}
+
+/* footer section */
+footer {
+    margin-top: auto;
+}
+
+.footer {
+    background-color: aliceblue;
+    height: 200px;
+    width: 100%;
+}
+
+.footer-logo img {
+    display: block;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.footer-logoname {
+    align-items: center;
+    margin-top: 5px;
+}
+
+.footer-logo p {
+    align-items: center;
+}
+
+.footer-li p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.foot-design {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right p {
+    text-align: center;
+}
+
+.foot-connect {
+    display: flex;
+    justify-content: center;
+
+}
+
+.foot-connect img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+/* Gallery slick slider */
+.slickslider img {
+    width: 300px;
+    height: 300px;
+}
+
+.slickslider img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.gal-head {
+    color: navy;
+}
